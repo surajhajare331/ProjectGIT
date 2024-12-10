@@ -1,0 +1,409 @@
+Python Features:
+
+Data type on this Structure
+
+1.Structure format -- rows and cols
+2.Semi Structure  -- JSON
+3.Unstructured -- Paragraph pdf,jpg,txt,
+
+Python : 
+
+Data Processing
+
+Data Base Integration :
+Source Data 
+
+Processing 
+
+Destination
+
+
+Python :
+1.High level Lang
+2.Open Source and Free ware
+3.Easy to Learn
+4.Platform independent
+5.Interpreter BAsed Lang
+
+
+
+
+
+Complier Based Lang
+
+Editor 
+
+CODE
+
+Compiler : to check syntax and high level to low level
+
+
+Interpreter 
+
+Execution
+
+
+
+
+Jupyter CODE
+
+print("Hi") -- inbuilt complier
+
+--> portable lang 
+
+windows --> Linux
+Linux --> windows
+
+
+real time 
+
+--->
+
+support POP|OOP
+
+same logic 
+
+function vs class and object i.e. Object oriented feature
+
+
+POP vs OOP
+----->
+Huge Library support :
+
+Open Source --> PSF --> community --> Repo : PyPI
+
+pip install packagename
+
+
+--> Extensible --> Different flavours 
+
+Python ---> C --> Cython   c+ Python
+Python --> java --> Jython
+
+Python ---> any lang
+
+---------------------------------------------------------------->
+1.Dyanamically Typed Lang
+
+a = 545 --> a --> type --> int
+b = 545.5 --> b --> type --> float
+---------------------------------------------------------------->
+2.Interpreter Based Lang
+3.library --> POP/OOP --> loosly coupled
+--------------------------------------------------------------->
+
+Python CODE ---> 
+
+English ---> Python Byte -- .pyc  --> PVM 
+
+
+Java --> logic complex --> 1000 lines
+
+
+JVM // PVM
+Python --> 50 line
+------------------------------------------------------>
+Limitation :
+1.we cannt use python for mobile dev
+2.wont support backward compatibility
+
+
+
+3.X ---> 2.X
+
+
+1
+1 2
+1 2 3
+
+--------------------------------------------------------------
+PEP8 :  Guide -- Python Rule Cleaned code
+Guido Van Rossum
+Documentation 
+
+=============================================================
+Project : Confluence
+
+=============================================================
+Data Types /Data Structures:
+
+Data type : type of Data 
+
+int ---> complete number without decimal number
+float -->incomplete number
+string --> single char and multiple chars
+char ---> not in Python
+None --> Empty [case study]
+complex --> real + img
+bool --> True /False
+
+============================================================
+Data Structures:
+list
+tuple
+set
+dict
+string
+frozenset
+
+
+list :
+it is collection elements /data type
+similar --> homogeneous
+different --> Hetrogeneous
+
+it is mutable type :
+
+
+
+row data --> Structure 
+
+
+
+Manufacture 
+
+Car          ------>  Storage                         ----> showroom
+
+File        ---->    Python -->  temp   logic/for loop/if statement                            Processor
+
+emails
+
+
+List  --> element insert/update/delete
+it is zero based index  
+
+indexing
+
+forward indexing
+start=0 to end = len-1
+reverse indexing
+start =-1 to -len
+
+it is denoted by []
+it is ordered type DS
+creation and storage order same -->
+
+
+----------------------------------------------------------
+
+elements 0----- > insert/delete/update --> indexing
+
+
+
+insertion :
+insert
+append
+extend
+
+support : 24*7 -- link
+
+
+
+Deletion:
+
+remove(elements)
+pop(index)  # default last
+clear()
+
+=================================================
+insertion
+add
+update
+deletion
+remove
+discard
+pop
+clear
+=================================================
+
+intersection  : common elements  
+union : all elements except duplicate
+difference  : element present in one set not in another set
+symmetric diff : except common elements
+
+===============================================
+intersection_update
+differece_update
+symmetric_diff_update
+===============================================
+real time : variable 
+
+df  = read -- data
+
+df1 = df -- operation
+
+df2  == df  operation
+
+memory 
+
+set : 
+===============================================
+
+p = {32,54,23,64,34}
+
+p1 = {4,75,3,46,4534}
+
+p.intersection(p1)
+================================================
+set 
+
+superset --- 
+subset
+disjoint
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

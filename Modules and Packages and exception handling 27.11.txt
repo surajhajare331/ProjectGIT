@@ -1,0 +1,280 @@
+Modules and Packages
+
+Application 
+
+Library--> Packages --> modules -->collection function+variables+classes
+
+Exception Handling:
+===================
+Errors :
+
+Unusal --> unexcepted :
+
+
+
+Application  -- > a b   a =43 b =0 --> Error-->
+
+
+
+Daily Task:
+
+Folder --> file --> read ----> Database store
+
+
+Dev | DE | Should Handle each and every condition
+
+
+Error:
+csv file read - loc
+
+
+def csv_read():
+ csv read code
+
+def excel_read():
+ excel read code
+
+================================
+try:
+
+risky code | code --exception raise
+
+except:
+
+Handling CODE :  Proper message | default value
+
+
+
+
+
+file = copper_04-03-2024.csv
+
+copper_termo.csv -- > date
+
+date = file.split()[]
+date == 
+
+try:
+    a = float((input("Enter the number:")))
+    b = float((input("Enter the number:")))
+    c = a/b
+    print("Division of {} and {} is {}".format(a,b,c))
+
+except:
+    print("Please check Values")
+print("rest code")
+print("Sdafsdfdf")
+print("sdafsdfdaf")
+def test():
+    print("from test")
+test()
+
+except : Handle ALL types of exception
+
+
+try:
+    a = int("45")
+    with open("dailyrun535.log") as fp:
+        data = fp.read()
+        print(data)
+except FileNotFoundError as msg:
+    print("Please check filename,its available at location:",msg)
+except ValueError as msg:
+    print("please check values:",msg)
+
+
+
+
+try:
+    a = int("45.7")
+    with open("dailyrun535.log") as fp:
+        data = fp.read()
+        print(data)
+except (FileNotFoundError,ValueError) as msg:
+    print("Please check filename,its available at location:",msg)
+
+
+try:
+    a = int("45")
+    with open("dailyrun535.log") as fp:
+        data = fp.read()
+        print(data)
+except Exception as msg:
+    print(msg)
+
+try:
+    a = int("45")
+    with open("dailyrun535.log") as fp:
+        data = fp.read()
+        print(data)
+except Exception as e:
+    print(e)
+
+
+try:
+risky code
+
+except:
+Handing code | Alternate code
+
+finally:  always executed
+clean up code
+
+try:
+    fp = open("dailyrun.log")
+    data =  fp.read()
+    dsfsdfsdfsdf
+    print(data)
+except:
+    print("in except")
+finally:
+    print(fp.closed)
+    fp.close()
+    print(fp.closed)
+    print("in finally")
+
+=============================================
+import os
+import logging
+from logging import exception
+
+logging.basicConfig(filename='dailyrun.log',level=logging.INFO,
+                    format='%(levelname)s:%(name)s:%(asctime)s:%(message)s',
+                    datefmt='%d:%m:%Y %I:%M:%S')
+
+logger = logging.getLogger(str(__file__).split("\\")[-1])
+
+def files_filter(dir):
+    logger.info("filtering dir {} ".format(dir))
+    files = [file for file in os.listdir(r'{}'.format(dir)) if file.endswith('.csv')]
+    logger.info("filtering done..")
+    return files
+
+def delete_file(sdir,filename):
+    logger.info("Deleting File ..{}".format(filename))
+    os.remove(r"{}/{}".format(sdir,filename))
+    return True
+
+
+def file_write(data,sdir,ddir,filename):
+    logger.info("writing file {}".format(filename))
+    try:
+        with open(r'{}/{}'.format(ddir,filename),'w') as fp:
+            fp.write(data)
+        status = delete_file(sdir,filename)
+    except Exception as e:
+        logger.critical("issue in writing file {}".format(filename))
+        logger.exception(e)
+    return status
+
+
+def files_content_read(sdir,ddir,filename):
+    try:
+        with open(r'{}/{}'.format(sdir,filename)) as fp:
+            data = fp.read()
+            logger.info("reading successfully")
+        st = file_write(data,sdir,ddir,filename)
+    except:
+        logger.critical("issue in reading file content {}".format(filename))
+
+    return st
+
+
+def main():
+    try:
+        source_dirname = 'source_dir'
+        destination_dir = 'destination_dir'
+        logger.info("Source Dir {}".format(source_dirname))
+        logger.info("Destination Dir {}".format(destination_dir))
+        csvfiles = files_filter(source_dirname)
+        logger.info("csv files in source dir {} ".format(csvfiles))
+        if csvfiles:
+            for file in csvfiles:
+                logger.info("reading file csv {}".format(file))
+                st = files_content_read(source_dirname,destination_dir,file)
+
+
+
+            logger.info("All files moved to Destination Folder")
+        else:
+            logger.info("no csv files in given dir")
+    except Exception as e:
+        logger.exception(e)
+    logger.info("All Processed")
+if __name__=='__main__':
+    main()
+
+class PersonalDetails:
+    def __init__(self,id,name,city):
+        self.id = id
+        self.name = name
+        self.city = city
+
+    def show(self):
+        print("ID:",self.id)
+        print("Name:",self.name)
+        print("City:",self.city)
+
+class PanAadharAdded(PersonalDetails):
+    def __init__(self,id,name,city,pan,aadhar):
+        super().__init__(id,name,city)
+        self.pan = pan
+        self.aadhar = aadhar
+    def show(self):
+        super().show()
+        print("Pan:",self.pan)
+        print("Aadhar:",self.aadhar)
+
+obj = PanAadharAdded('FSDF','keshav','pune','SDFS',5435435435345)
+obj.show()
+
+
+class A:
+    def m1(self):
+        print("in m1 from A")
+class B(A):
+    def m1(self):
+        super().m1()
+        print("in m1 from B")
+class C(A):
+    def m1(self):
+        super().m1()
+        print("in m1 from C")
+class F(A):
+    def m1(self):
+        super().m1()
+        print("in m1 from F")
+
+class D(B,C,F):
+    def m1(self):
+        super().m1()
+        print("in m1 from D")
+
+obj = D()
+obj.m1()
+
+Polymorphism
+===============
+
+
+class A:
+    def __init__(self,a):
+        self.a = a
+
+    def __add__(self, other):
+        return self.a + str(other.a)
+
+    def __mul__(self, other):
+        return int(self.a) * int(other.a)
+
+obj = A('2')
+obj1 = A('3')
+
+print(obj*obj1)
+
+
+
+
+
+
+
